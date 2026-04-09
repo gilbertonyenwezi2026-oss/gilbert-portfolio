@@ -1,6 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dashboard on Gilbert N. Onyenwezi | Operations leader, Data Science &amp; Artificial Intelligence Portfolio</title><link>https://shimmering-parfait-171ef9.netlify.app/tags/dashboard/</link><description>Recent content in Dashboard on Gilbert N. Onyenwezi | Operations leader, Data Science &amp; Artificial Intelligence Portfolio</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 08 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://shimmering-parfait-171ef9.netlify.app/tags/dashboard/index.xml" rel="self" type="application/rss+xml"/><item><title>Supply Chain KPI Dashboard</title><link>https://shimmering-parfait-171ef9.netlify.app/projects_backup/supply-chain-kpi-dashboard/</link><pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate><guid>https://shimmering-parfait-171ef9.netlify.app/projects_backup/supply-chain-kpi-dashboard/</guid><description>&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
-&lt;p&gt;Operations teams often lack a unified view of performance across safety, quality, service, and cost.&lt;/p&gt;
-&lt;h2 id="objective"&gt;Objective&lt;/h2&gt;
-&lt;p&gt;Build a KPI-driven dashboard that enables real-time visibility into performance and faster issue identification.&lt;/p&gt;
-&lt;h2 id="tools"&gt;Tools&lt;/h2&gt;
-&lt;p&gt;SQL, Python, Dashboarding Tools&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dashboard on Gilbert N. Onyenwezi | Operations leader, Data Science &amp; Artificial Intelligence Portfolio</title>
+    <link>http://localhost:1313/tags/dashboard/</link>
+    <description>Recent content in Dashboard on Gilbert N. Onyenwezi | Operations leader, Data Science &amp; Artificial Intelligence Portfolio</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 08 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/dashboard/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Supply Chain KPI Dashboard</title>
+      <link>http://localhost:1313/projects_backup/supply-chain-kpi-dashboard/</link>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects_backup/supply-chain-kpi-dashboard/</guid>
+      <description>&lt;h2 id=&#34;problem&#34;&gt;Problem&lt;/h2&gt;&#xA;&lt;p&gt;Operations teams often lack a unified view of performance across safety, quality, service, and cost.&lt;/p&gt;&#xA;&lt;h2 id=&#34;objective&#34;&gt;Objective&lt;/h2&gt;&#xA;&lt;p&gt;Build a KPI-driven dashboard that enables real-time visibility into performance and faster issue identification.&lt;/p&gt;&#xA;&lt;h2 id=&#34;tools&#34;&gt;Tools&lt;/h2&gt;&#xA;&lt;p&gt;SQL, Python, Dashboarding Tools&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

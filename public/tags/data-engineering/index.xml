@@ -1,7 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data Engineering on Gilbert N. Onyenwezi | Operations leader, Data Science &amp; Artificial Intelligence Portfolio</title><link>https://shimmering-parfait-171ef9.netlify.app/tags/data-engineering/</link><description>Recent content in Data Engineering on Gilbert N. Onyenwezi | Operations leader, Data Science &amp; Artificial Intelligence Portfolio</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 08 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://shimmering-parfait-171ef9.netlify.app/tags/data-engineering/index.xml" rel="self" type="application/rss+xml"/><item><title>ERP-Ready Data Pipeline for Operations</title><link>https://shimmering-parfait-171ef9.netlify.app/projects_backup/erp-data-pipeline/</link><pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate><guid>https://shimmering-parfait-171ef9.netlify.app/projects_backup/erp-data-pipeline/</guid><description>&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
-&lt;p&gt;Operational data is often fragmented across systems, making it difficult to generate consistent, reliable insights.&lt;/p&gt;
-&lt;h2 id="objective"&gt;Objective&lt;/h2&gt;
-&lt;p&gt;Design a data pipeline that cleans and standardizes operational data and supports integration with ERP platforms.&lt;/p&gt;
-&lt;h2 id="tools"&gt;Tools&lt;/h2&gt;
-&lt;p&gt;SQL, Python, Data Modeling&lt;/p&gt;</description></item><item><title>Projects</title><link>https://shimmering-parfait-171ef9.netlify.app/projects_backup/</link><pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate><guid>https://shimmering-parfait-171ef9.netlify.app/projects_backup/</guid><description>&lt;h1 id="projects"&gt;Projects&lt;/h1&gt;
-&lt;p&gt;This portfolio focuses on work at the intersection of operations, analytics, quality, and data systems.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Engineering on Gilbert N. Onyenwezi | Operations leader, Data Science &amp; Artificial Intelligence Portfolio</title>
+    <link>http://localhost:1313/tags/data-engineering/</link>
+    <description>Recent content in Data Engineering on Gilbert N. Onyenwezi | Operations leader, Data Science &amp; Artificial Intelligence Portfolio</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 08 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/data-engineering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ERP-Ready Data Pipeline for Operations</title>
+      <link>http://localhost:1313/projects_backup/erp-data-pipeline/</link>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects_backup/erp-data-pipeline/</guid>
+      <description>&lt;h2 id=&#34;problem&#34;&gt;Problem&lt;/h2&gt;&#xA;&lt;p&gt;Operational data is often fragmented across systems, making it difficult to generate consistent, reliable insights.&lt;/p&gt;&#xA;&lt;h2 id=&#34;objective&#34;&gt;Objective&lt;/h2&gt;&#xA;&lt;p&gt;Design a data pipeline that cleans and standardizes operational data and supports integration with ERP platforms.&lt;/p&gt;&#xA;&lt;h2 id=&#34;tools&#34;&gt;Tools&lt;/h2&gt;&#xA;&lt;p&gt;SQL, Python, Data Modeling&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Projects</title>
+      <link>http://localhost:1313/projects_backup/</link>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects_backup/</guid>
+      <description>&lt;h1 id=&#34;projects&#34;&gt;Projects&lt;/h1&gt;&#xA;&lt;p&gt;This portfolio focuses on work at the intersection of operations, analytics, quality, and data systems.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

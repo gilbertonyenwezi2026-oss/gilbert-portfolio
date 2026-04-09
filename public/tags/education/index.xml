@@ -1,10 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Education on Gilbert N. Onyenwezi | Operations leader, Data Science &amp; Artificial Intelligence Portfolio</title><link>https://shimmering-parfait-171ef9.netlify.app/tags/education/</link><description>Recent content in Education on Gilbert N. Onyenwezi | Operations leader, Data Science &amp; Artificial Intelligence Portfolio</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 08 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://shimmering-parfait-171ef9.netlify.app/tags/education/index.xml" rel="self" type="application/rss+xml"/><item><title>Education</title><link>https://shimmering-parfait-171ef9.netlify.app/education/</link><pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate><guid>https://shimmering-parfait-171ef9.netlify.app/education/</guid><description>&lt;h1 id="education"&gt;Education&lt;/h1&gt;
-&lt;h2 id="master-of-science-in-data-science-ai-specialization"&gt;Master of Science in Data Science (AI Specialization)&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Northwestern University&lt;/strong&gt;&lt;br&gt;
-&lt;em&gt;Expected 2026&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id="associate-degree-in-computer-science--information-systems"&gt;Associate Degree in Computer Science &amp;amp; Information Systems&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Middlesex College&lt;/strong&gt;&lt;br&gt;
-&lt;em&gt;2021&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id="postgraduate-certificate-in-entrepreneurship-and-innovation"&gt;Postgraduate Certificate in Entrepreneurship and Innovation&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Massachusetts Institute of Technology&lt;/strong&gt;&lt;br&gt;
-&lt;em&gt;2018&lt;/em&gt;&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Education on Gilbert N. Onyenwezi | Operations leader, Data Science &amp; Artificial Intelligence Portfolio</title>
+    <link>http://localhost:1313/tags/education/</link>
+    <description>Recent content in Education on Gilbert N. Onyenwezi | Operations leader, Data Science &amp; Artificial Intelligence Portfolio</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 08 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/education/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Education</title>
+      <link>http://localhost:1313/education/</link>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/education/</guid>
+      <description>&lt;h1 id=&#34;education&#34;&gt;Education&lt;/h1&gt;&#xA;&lt;h2 id=&#34;master-of-science-in-data-science-ai-specialization&#34;&gt;Master of Science in Data Science (AI Specialization)&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Northwestern University&lt;/strong&gt;&lt;br&gt;&#xA;&lt;em&gt;Expected 2026&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;associate-degree-in-computer-science--information-systems&#34;&gt;Associate Degree in Computer Science &amp;amp; Information Systems&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Middlesex College&lt;/strong&gt;&lt;br&gt;&#xA;&lt;em&gt;2021&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;postgraduate-certificate-in-entrepreneurship-and-innovation&#34;&gt;Postgraduate Certificate in Entrepreneurship and Innovation&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Massachusetts Institute of Technology&lt;/strong&gt;&lt;br&gt;&#xA;&lt;em&gt;2018&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

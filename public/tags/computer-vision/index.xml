@@ -1,6 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Computer Vision on Gilbert N. Onyenwezi | Operations leader, Data Science &amp; Artificial Intelligence Portfolio</title><link>https://shimmering-parfait-171ef9.netlify.app/tags/computer-vision/</link><description>Recent content in Computer Vision on Gilbert N. Onyenwezi | Operations leader, Data Science &amp; Artificial Intelligence Portfolio</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 08 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://shimmering-parfait-171ef9.netlify.app/tags/computer-vision/index.xml" rel="self" type="application/rss+xml"/><item><title>AI-Powered Quality Inspection System</title><link>https://shimmering-parfait-171ef9.netlify.app/projects_backup/ai-quality-inspection/</link><pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate><guid>https://shimmering-parfait-171ef9.netlify.app/projects_backup/ai-quality-inspection/</guid><description>&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
-&lt;p&gt;Manufacturing environments often rely on manual inspection processes that are inconsistent, slow, and difficult to scale.&lt;/p&gt;
-&lt;h2 id="objective"&gt;Objective&lt;/h2&gt;
-&lt;p&gt;Design a system that uses computer vision and analytics to detect defects earlier, improve classification accuracy, and provide root-cause data.&lt;/p&gt;
-&lt;h2 id="tools"&gt;Tools&lt;/h2&gt;
-&lt;p&gt;Python, Computer Vision, Data Analysis&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Computer Vision on Gilbert N. Onyenwezi | Operations leader, Data Science &amp; Artificial Intelligence Portfolio</title>
+    <link>http://localhost:1313/tags/computer-vision/</link>
+    <description>Recent content in Computer Vision on Gilbert N. Onyenwezi | Operations leader, Data Science &amp; Artificial Intelligence Portfolio</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 08 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/computer-vision/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI-Powered Quality Inspection System</title>
+      <link>http://localhost:1313/projects_backup/ai-quality-inspection/</link>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects_backup/ai-quality-inspection/</guid>
+      <description>&lt;h2 id=&#34;problem&#34;&gt;Problem&lt;/h2&gt;&#xA;&lt;p&gt;Manufacturing environments often rely on manual inspection processes that are inconsistent, slow, and difficult to scale.&lt;/p&gt;&#xA;&lt;h2 id=&#34;objective&#34;&gt;Objective&lt;/h2&gt;&#xA;&lt;p&gt;Design a system that uses computer vision and analytics to detect defects earlier, improve classification accuracy, and provide root-cause data.&lt;/p&gt;&#xA;&lt;h2 id=&#34;tools&#34;&gt;Tools&lt;/h2&gt;&#xA;&lt;p&gt;Python, Computer Vision, Data Analysis&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

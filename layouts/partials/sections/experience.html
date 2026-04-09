@@ -1,0 +1,68 @@
+{{ if .Site.Params.experience.enable | default false }}
+{{- $experience := .Site.Language.Params.experience | default .Site.Params.experience -}}
+<section id="experience" class="py-5">
+  <div class="container">
+    <h3 class="text-center">
+      {{ $experience.title | default .Site.Params.experience.title | default (i18n "experience") }}
+    </h3>
+
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-10 col-lg-10 py-5">
+        <div class="experience-container px-3 pt-2">
+
+          <ul class="nav nav-pills mb-4 bg-transparent primary-font" id="experience-tab" role="tablist">
+            {{ range $index, $item := $experience.items | default .Site.Params.experience.items }}
+              {{ $tabKey := replaceRE "-+" "-" (replaceRE "[^a-zA-Z0-9]" "-" (print $item.company "-" $item.job "-" $item.date)) | lower }}
+              <li class="nav-item px-1 bg-transparent" role="presentation">
+                <button
+                  class="nav-link {{ if eq $index 0 }}active{{ end }} bg-transparent"
+                  id="{{ $tabKey }}-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-{{ $tabKey }}"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-{{ $tabKey }}"
+                  aria-selected="{{ if eq $index 0 }}true{{ else }}false{{ end }}">
+                  {{ $item.company }}
+                </button>
+              </li>
+            {{ end }}
+          </ul>
+
+          <div class="tab-content pb-3 bg-transparent primary-font" id="experience-tabContent">
+            {{ range $index, $item := $experience.items | default .Site.Params.experience.items }}
+              {{ $tabKey := replaceRE "-+" "-" (replaceRE "[^a-zA-Z0-9]" "-" (print $item.company "-" $item.job "-" $item.date)) | lower }}
+              <div
+                class="tab-pane fade {{ if eq $index 0 }}show active{{ end }}"
+                id="pills-{{ $tabKey }}"
+                role="tabpanel"
+                aria-labelledby="{{ $tabKey }}-tab">
+
+                <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between mb-3">
+                  <div>
+                    <span class="h4">{{ $item.job }}</span>
+                    <small class="mx-1">-</small>
+                    {{ if $item.companyUrl }}
+                      <a href="{{ $item.companyUrl }}" target="_blank" rel="noopener noreferrer">{{ $item.company }}</a>
+                    {{ else }}
+                      <span>{{ $item.company }}</span>
+                    {{ end }}
+                  </div>
+                  <div class="mt-2 mt-md-0">
+                    <small>{{ $item.date }}</small>
+                  </div>
+                </div>
+
+                <div class="pb-2 pb-3">
+                  {{ $item.content | markdownify }}
+                </div>
+              </div>
+            {{ end }}
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
