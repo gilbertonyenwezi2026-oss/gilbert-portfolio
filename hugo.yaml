@@ -1,0 +1,294 @@
+baseURL: "https://your-netlify-site.netlify.app/"
+languageCode: "en-us"
+title: "Gilbert N. Onyenwezi | Operations leader, Data Science & Artificial Intelligence Portfolio"
+theme: "hugo-profile"
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+pagination:
+  pagerSize: 6
+
+enableRobotsTXT: true
+
+params:
+  title: "Gilbert N. Onyenwezi"
+  description: "Operations leader, Data Analyst, and portfolio showcasing data science, analytics, SQL, Go, and process improvement projects."
+  favicon: "/images/profile.png"
+  useBootstrapCDN: false
+  mathjax: false
+  animate: true
+
+  theme:
+    disableThemeToggle: false
+    defaultTheme: "light"
+
+  font:
+    fontSize: "1rem"
+    fontWeight: 400
+    lineHeight: 1.5
+    textAlign: "left"
+
+  navbar:
+    align: ms-auto
+    disableSearch: true
+    stickyNavBar:
+      enable: true
+      showOnScrollUp: true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: true
+      disableContact: false
+
+  hero:
+    enable: true
+    intro: "Hi, I'm"
+    title: "Gilbert N. Onyenwezi"
+    subtitle: "Operations Leader | Data Analyst | Data Science & Data Engineering Portfolio"
+    content: "I build decision-ready solutions at the intersection of operations, analytics, quality, and technology. My background spans manufacturing, logistics, operational excellence, and leadership, and I am now deepening that foundation through graduate work in data science and AI."
+    image: "/images/profile.png"
+    roundImage: true
+    bottomImage:
+      enable: false
+    button:
+      enable: true
+      name: "Resume PDF"
+      url: "/files/resume.pdf"
+      download: false
+      newPage: true
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-linkedin
+          url: "https://www.linkedin.com/in/gilbert-onyenwezi-71853531/"
+        - icon: fab fa-github
+          url: "https://github.com/gilbertonyenwezi2026-oss"
+        - icon: fas fa-envelope
+          url: "mailto:gilbertonyenwezi2026@u.northwestern.edu"
+
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/profile.png"
+    content: |
+      I am a supply chain and operations leader with experience across manufacturing, distribution, quality, and logistics. My work has focused on operational excellence, KPI-driven improvement, Lean Six Sigma, and cross-functional execution. I am currently completing a Master’s in Data Science with an AI specialization at Northwestern University and building a portfolio in SQL, Python, Go, analytics, and data engineering.
+    skills:
+      enable: true
+      title: "Core Skills"
+      items:
+        - "Data and Analytics"
+        - "Data Engineering"
+        - "SQL / NoSQL / PostgreSQL / MySQL Database Management"
+        - "Python"
+        - "Go Programming"
+        - "Supply Chain  Analytics"
+        - "R Programming"
+        - "Business Intelligence & Dashboarding"
+        - "AI / Machine Learning"
+        - "Product Management"
+        - "Pandas / NumPy / Matplotlib / Seaborn / Plotly"
+        - "Scikit-Learn / TensorFlow / Keras / PyTorch"
+        - "Git / GitHub / Version Control / CI-CD / DevOps / Netlify"
+
+  experience:
+    enable: true
+    title: "Experience"
+    items:
+      - job: "Operational Excellence & Distribution Leadership"
+        company: "Wilsonart"
+        companyUrl: ""
+        date: "Apr 2023 – Sept 2025"
+        content: |
+          Led end-to-end operational performance across manufacturing and distribution, driving measurable improvements in efficiency, quality, and throughput through data-driven decision-making and Lean methodologies.
+
+          **Operational Excellence Manager (2024 – 2025)**
+          - Led enterprise-level supply chain and manufacturing transformation initiatives
+          - Developed KPI frameworks across Safety, Quality, Service, and Cost
+          - Built capacity planning models and multi-year operational roadmaps
+          - Partnered with leadership to execute cross-functional strategic initiatives
+          - Drove continuous improvement through Lean Six Sigma and structured problem-solving
+
+          **Area Manager – Distribution (2023 – 2024)**
+          - Managed distribution and receiving operations in a high-volume environment
+          - Led teams to achieve operational targets aligned with business objectives
+          - Implemented process improvements to increase efficiency and reduce waste
+          - Monitored daily performance metrics and executed corrective actions
+          - Ensured compliance with ISO and quality standards
+
+      - job: "Global Warehouse & Logistics Management"
+        company: "Johnson Controls"
+        companyUrl: ""
+        date: "Mar 2022 – Mar 2023"
+        content: |
+          Managed global warehouse operations and eCommerce fulfillment, focusing on execution efficiency, logistics performance, and data-informed decision-making.
+
+          - Directed end-to-end fulfillment operations and logistics coordination
+          - Developed demand forecasts and operational plans using data analysis
+          - Led warehouse relocation and operational transition initiatives
+          - Evaluated and improved logistics partner performance
+          - Collaborated with cross-functional teams to enhance customer experience
+
+      - job: "Transportation & Operations Leadership"
+        company: "Amazon"
+        companyUrl: ""
+        date: "2018 – 2020"
+        content: |
+          Led transportation and fulfillment operations in a high-volume, performance-driven environment, focusing on process optimization, defect reduction, and team leadership.
+
+          **Transportation Specialist (2019 – 2020)**
+          - Managed transportation operations and stakeholder communication
+          - Identified and eliminated process inefficiencies
+          - Monitored service metrics and ensured operational targets were met
+
+          **Area Manager (2018)**
+          - Led a team of 100+ associates in fast-paced operations
+          - Ensured adherence to safety and quality standards
+          - Provided coaching, performance management, and workforce development
+
+      - job: "Operations & Quality Leadership"
+        company: "Earlier Leadership Roles"
+        companyUrl: ""
+        date: "2003 – 2016"
+        content: |
+          Held progressive leadership roles across operations, quality, and executive management, building a strong foundation in manufacturing, logistics, and organizational execution.
+
+          **Chief Operating Officer – Ferriesmart / Jand Homes**
+          - Directed company operations to achieve financial and strategic goals
+          - Developed operational policies and business plans
+          - Oversaw execution of company-wide initiatives
+
+          **Operations Manager – United Geophysical Nigeria Limited**
+          - Supported strategic projects and executive leadership initiatives
+          - Managed communication, reporting, and organizational alignment
+          - Led employee engagement and performance initiatives
+
+          **Quality Control Manager – Manaksia Industries**
+          - Managed production quality and process efficiency
+          - Led cross-functional improvement initiatives
+          - Ensured compliance with quality standards and procedures
+
+  education:
+    enable: true
+    title: "Education"
+    items:
+      - title: "Master’s in Data Science, AI Specialization"
+        school:
+          name: "Northwestern University"
+          url: ""
+        date: "Expected 2026"
+        GPA: ""
+        content: "Graduate study focused on data science, analytics, and applied AI."
+
+      - title: "Associate's Degree, Computer Science & Information Systems"
+        school:
+          name: "Middlesex College"
+          url: ""
+        date: "2021"
+        GPA: ""
+        content: "Foundational study in computing, systems, and information technology."
+
+      - title: "Postgraduate Certificate, Entrepreneurship and Innovation"
+        school:
+          name: "Massachusetts Institute of Technology"
+          url: ""
+        date: "2018"
+        GPA: ""
+        content: "Focused on innovation, entrepreneurship, and strategic thinking."
+
+      - title: "Postgraduate Diploma, Strategic Business Information Technology"
+        school:
+          name: "National Computing Centre, London"
+          url: ""
+        date: "2009"
+        GPA: ""
+        content: ""
+
+      - title: "Postgraduate Diploma, Mechanical Engineering"
+        school:
+          name: "Federal University of Technology Akure"
+          url: ""
+        date: "2006"
+        GPA: ""
+        content: ""
+
+      - title: "Bachelor’s Degree, Mechanical Engineering"
+        school:
+          name: "Yaba College of Technology"
+          url: ""
+        date: "2003"
+        GPA: ""
+        content: ""
+
+  projects:
+    enable: true
+    title: "Featured Projects"
+    items:
+      - title: "AI-Powered Quality Inspection Vision"
+        content: "Concept portfolio project showing how computer vision and analytics can support defect detection, classification, and root-cause analysis in manufacturing environments. Emphasis on operational adoption, data capture, and KPI impact."
+        image: "/images/projects/project1.png"
+        badges:
+          - "Python"
+          - "Computer Vision"
+          - "Manufacturing Analytics"
+          - "Operations"
+        links:
+          - icon: fab fa-github
+          
+
+      - title: "Supply Chain KPI Dashboard"
+        content: "Analytics project for monitoring safety, quality, service, cost, throughput, and inventory performance. Built to support countermeasure development and decision-making for plant and distribution leadership."
+        image: "/images/projects/project2.png"
+        badges:
+          - "SQL"
+          - "Python"
+          - "Dashboarding"
+          - "KPI Design"
+        links:
+          - icon: fab fa-github
+           
+      - title: "ERP-Ready Defect and Inventory Data Pipeline"
+        content: "Data engineering concept showing how operational data can move from plant-floor capture into a structured pipeline for reporting, alerts, and ERP integration. Designed around data quality, traceability, and execution speed."
+        image: "/images/projects/project3.png"
+        badges:
+          - "Data Engineering"
+          - "ETL"
+          - "SQL"
+          - "ERP Integration"
+        links:
+          - icon: fab fa-github
+            
+
+      - title: "Go + Hugo Technical Portfolio Site"
+        content: "Personal portfolio site built with Hugo and Go-based tooling to present technical work, project thinking, and career narrative for data science and data engineering opportunities."
+        image: "/images/projects/project4.png"
+        badges:
+          - "Go"
+          - "Hugo"
+          - "GitHub"
+          - "Netlify"
+        links:
+          - icon: fab fa-github
+            
+
+  contact:
+    enable: true
+    title: "Contact"
+    content: "I’m open to conversations around operations analytics, data science, data engineering, manufacturing intelligence, and supply chain transformation."
+    email: "gilbertonyenwezi2026@u.northwestern.edu"
+    btnName: "Mail Me"
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 0
+      title: "Latest"
+      enable: false
+    socialNetworks:
+      linkedin: "https://www.linkedin.com/in/gilbert-onyenwezi-71853531/"
+      github: "https://github.com/gilbertonyenwezi2026-oss"

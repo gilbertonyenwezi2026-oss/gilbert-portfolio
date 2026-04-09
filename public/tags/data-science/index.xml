@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Science on Gilbert N. Onyenwezi | Operations leader, Data Science &amp; Artificial Intelligence Portfolio</title>
+    <link>http://localhost:1313/tags/data-science/</link>
+    <description>Recent content in Data Science on Gilbert N. Onyenwezi | Operations leader, Data Science &amp; Artificial Intelligence Portfolio</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 08 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/data-science/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;h1 id=&#34;about-me&#34;&gt;About Me&lt;/h1&gt;&#xA;&lt;p&gt;I am a supply chain and operations leader with extensive experience across manufacturing, logistics, quality, and distribution. My career has been built on driving operational excellence through data, process improvement, and cross-functional collaboration.&lt;/p&gt;&#xA;&lt;p&gt;I am currently pursuing a Master’s in Data Science with an Artificial Intelligence specialization at Northwestern University. Through this program, I am expanding my technical capabilities in data science, data engineering, SQL, Python, and Go.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AI-Powered Quality Inspection System</title>
+      <link>http://localhost:1313/projects_backup/ai-quality-inspection/</link>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects_backup/ai-quality-inspection/</guid>
+      <description>&lt;h2 id=&#34;problem&#34;&gt;Problem&lt;/h2&gt;&#xA;&lt;p&gt;Manufacturing environments often rely on manual inspection processes that are inconsistent, slow, and difficult to scale.&lt;/p&gt;&#xA;&lt;h2 id=&#34;objective&#34;&gt;Objective&lt;/h2&gt;&#xA;&lt;p&gt;Design a system that uses computer vision and analytics to detect defects earlier, improve classification accuracy, and provide root-cause data.&lt;/p&gt;&#xA;&lt;h2 id=&#34;tools&#34;&gt;Tools&lt;/h2&gt;&#xA;&lt;p&gt;Python, Computer Vision, Data Analysis&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Education</title>
+      <link>http://localhost:1313/education/</link>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/education/</guid>
+      <description>&lt;h1 id=&#34;education&#34;&gt;Education&lt;/h1&gt;&#xA;&lt;h2 id=&#34;master-of-science-in-data-science-ai-specialization&#34;&gt;Master of Science in Data Science (AI Specialization)&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Northwestern University&lt;/strong&gt;&lt;br&gt;&#xA;&lt;em&gt;Expected 2026&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;associate-degree-in-computer-science--information-systems&#34;&gt;Associate Degree in Computer Science &amp;amp; Information Systems&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Middlesex College&lt;/strong&gt;&lt;br&gt;&#xA;&lt;em&gt;2021&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;postgraduate-certificate-in-entrepreneurship-and-innovation&#34;&gt;Postgraduate Certificate in Entrepreneurship and Innovation&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Massachusetts Institute of Technology&lt;/strong&gt;&lt;br&gt;&#xA;&lt;em&gt;2018&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Home</title>
+      <link>http://localhost:1313/</link>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/</guid>
+      <description>&lt;h1 id=&#34;gilbert-onyenwezi&#34;&gt;Gilbert Onyenwezi&lt;/h1&gt;&#xA;&lt;h2 id=&#34;operations-leader--data-science--data-engineering-portfolio&#34;&gt;Operations Leader | Data Science &amp;amp; Data Engineering Portfolio&lt;/h2&gt;&#xA;&lt;p&gt;I build &lt;strong&gt;decision-ready systems at the intersection of operations, analytics, and technology&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;With a background in manufacturing, supply chain, and operational excellence, I have led initiatives focused on improving &lt;strong&gt;quality, efficiency, and cost performance&lt;/strong&gt; across complex environments. I am currently advancing my technical capabilities through a Master’s in Data Science with an AI specialization at Northwestern University.&lt;/p&gt;&#xA;&lt;h2 id=&#34;executive-summary&#34;&gt;Executive Summary&lt;/h2&gt;&#xA;&lt;p&gt;Most organizations generate data. Few translate it into consistent, actionable execution. My work focuses on closing that gap through KPI systems, data pipelines, and operational decision support.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Projects</title>
+      <link>http://localhost:1313/projects_backup/</link>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects_backup/</guid>
+      <description>&lt;h1 id=&#34;projects&#34;&gt;Projects&lt;/h1&gt;&#xA;&lt;p&gt;This portfolio focuses on work at the intersection of operations, analytics, quality, and data systems.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

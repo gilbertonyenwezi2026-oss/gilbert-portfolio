@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gilbert N. Onyenwezi — Supply Chain & Data Science Leader</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;1,9..144,300&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0e0e0d;
+    --paper: #f5f2eb;
+    --accent: #c84b2f;
+    --accent2: #2d5a4e;
+    --mid: #6b6760;
+    --light: #e8e4da;
+    --card: #fffefb;
+    --mono: 'DM Mono', monospace;
+    --serif: 'Fraunces', serif;
+    --display: 'DM Serif Display', serif;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--mono);
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1.2rem 3rem;
+    background: var(--paper);
+    border-bottom: 1px solid var(--light);
+  }
+  .nav-logo {
+    font-family: var(--display);
+    font-size: 1.1rem;
+    letter-spacing: 0.02em;
+  }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a {
+    text-decoration: none;
+    color: var(--mid);
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--accent); }
+
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 80px;
+  }
+  .hero-left {
+    padding: 5rem 3rem 5rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+  .hero-left::after {
+    content: '';
+    position: absolute; top: 10%; right: 0; bottom: 10%;
+    width: 1px;
+    background: linear-gradient(to bottom, transparent, var(--light), transparent);
+  }
+  .hero-tag {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+    display: flex; align-items: center; gap: 0.8rem;
+  }
+  .hero-tag::before {
+    content: '';
+    display: inline-block;
+    width: 32px; height: 1px;
+    background: var(--accent);
+  }
+  h1 {
+    font-family: var(--display);
+    font-size: clamp(3rem, 5vw, 5.5rem);
+    line-height: 1.05;
+    margin-bottom: 0.3rem;
+  }
+  .hero-title-em {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 300;
+    color: var(--accent2);
+  }
+  .hero-summary {
+    margin-top: 2rem;
+    max-width: 460px;
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--mid);
+  }
+  .hero-cta {
+    margin-top: 2.5rem;
+    display: flex; gap: 1rem; flex-wrap: wrap;
+  }
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 1.8rem;
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  .btn-primary {
+    background: var(--ink);
+    color: var(--paper);
+    border: 1px solid var(--ink);
+  }
+  .btn-primary:hover { background: var(--accent); border-color: var(--accent); }
+  .btn-outline {
+    background: transparent;
+    color: var(--ink);
+    border: 1px solid var(--ink);
+  }
+  .btn-outline:hover { background: var(--ink); color: var(--paper); }
+
+  .hero-right {
+    padding: 5rem 5rem 5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hero-stats {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1.5px;
+    background: var(--light);
+    border: 1.5px solid var(--light);
+    margin-bottom: 2.5rem;
+  }
+  .stat {
+    background: var(--card);
+    padding: 1.5rem;
+  }
+  .stat-num {
+    font-family: var(--display);
+    font-size: 2.8rem;
+    line-height: 1;
+    color: var(--accent);
+    margin-bottom: 0.3rem;
+  }
+  .stat-label { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mid); }
+
+  .hero-skills { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .skill-pill {
+    padding: 0.35rem 0.9rem;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    border: 1px solid var(--light);
+    background: var(--card);
+    color: var(--mid);
+  }
+  .skill-pill.featured { border-color: var(--accent2); color: var(--accent2); }
+
+  /* SECTIONS */
+  section { padding: 6rem 5rem; }
+  section:nth-child(even) { background: var(--card); }
+
+  .section-header { margin-bottom: 3.5rem; }
+  .section-num {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+  }
+  h2 {
+    font-family: var(--display);
+    font-size: clamp(2rem, 3.5vw, 3.5rem);
+    line-height: 1.1;
+  }
+  h2 em {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 300;
+    color: var(--mid);
+  }
+
+  /* EXPERIENCE TIMELINE */
+  .timeline { position: relative; }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 1px;
+    background: linear-gradient(to bottom, var(--accent), var(--light));
+  }
+  .timeline-item {
+    padding-left: 2.5rem;
+    padding-bottom: 3rem;
+    position: relative;
+  }
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -4px; top: 8px;
+    width: 9px; height: 9px;
+    border-radius: 50%;
+    background: var(--accent);
+    border: 2px solid var(--paper);
+  }
+  section:nth-child(even) .timeline-item::before { border-color: var(--card); }
+  .timeline-header { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.3rem; }
+  .timeline-company { font-family: var(--display); font-size: 1.3rem; }
+  .timeline-date {
+    font-size: 11px; letter-spacing: 0.1em;
+    color: var(--accent); text-transform: uppercase;
+    background: var(--light);
+    padding: 0.2rem 0.6rem;
+  }
+  .timeline-role {
+    font-size: 12px; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--accent2);
+    margin-bottom: 1rem;
+  }
+  .timeline-role span { font-size: 11px; color: var(--mid); margin-left: 0.5rem; }
+  .timeline-bullets { list-style: none; }
+  .timeline-bullets li {
+    padding: 0.2rem 0 0.2rem 1.2rem;
+    position: relative;
+    color: var(--mid);
+    font-size: 13px;
+    line-height: 1.7;
+  }
+  .timeline-bullets li::before {
+    content: '—';
+    position: absolute; left: 0;
+    color: var(--accent);
+    font-size: 11px;
+  }
+
+  /* EDUCATION */
+  .edu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5px; background: var(--light); border: 1.5px solid var(--light); }
+  .edu-card {
+    background: var(--card);
+    padding: 1.8rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .edu-card::after {
+    content: attr(data-year);
+    position: absolute;
+    right: -10px; bottom: -15px;
+    font-family: var(--display);
+    font-size: 5rem;
+    color: var(--light);
+    line-height: 1;
+    pointer-events: none;
+    user-select: none;
+  }
+  .edu-degree { font-family: var(--display); font-size: 1.05rem; margin-bottom: 0.3rem; line-height: 1.3; }
+  .edu-school { font-size: 12px; color: var(--accent2); letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+  .edu-year { font-size: 11px; color: var(--mid); letter-spacing: 0.1em; }
+
+  /* SKILLS SECTION */
+  .skills-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem; }
+  .skill-group-title {
+    font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase;
+    color: var(--accent); margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--light);
+  }
+  .skill-list { list-style: none; }
+  .skill-list li {
+    padding: 0.4rem 0;
+    font-size: 13px;
+    color: var(--mid);
+    border-bottom: 1px solid var(--light);
+    display: flex; align-items: center; gap: 0.6rem;
+  }
+  .skill-list li::before {
+    content: '';
+    width: 4px; height: 4px;
+    border-radius: 50%;
+    background: var(--accent2);
+    flex-shrink: 0;
+  }
+
+  /* CONTACT */
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+  .contact-info { display: flex; flex-direction: column; gap: 1.2rem; }
+  .contact-item { display: flex; gap: 1rem; align-items: flex-start; }
+  .contact-icon { color: var(--accent); font-size: 16px; margin-top: 2px; flex-shrink: 0; }
+  .contact-label { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid); }
+  .contact-value { font-size: 14px; margin-top: 0.1rem; }
+  .contact-value a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--light); transition: border-color 0.2s; }
+  .contact-value a:hover { border-color: var(--accent); color: var(--accent); }
+
+  .contact-note {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: var(--mid);
+    border-left: 3px solid var(--accent);
+    padding-left: 1.5rem;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 2rem 5rem;
+    background: var(--ink);
+    color: var(--mid);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+  }
+  footer span { color: var(--paper); }
+
+  /* ANIMATIONS */
+  .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .fade-in.visible { opacity: 1; transform: none; }
+
+  /* Hugo/Markdown note banner */
+  .hugo-note {
+    background: var(--accent2);
+    color: var(--paper);
+    padding: 0.8rem 5rem;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    display: flex; align-items: center; gap: 0.8rem;
+  }
+  .hugo-note code {
+    background: rgba(255,255,255,0.15);
+    padding: 0.1rem 0.4rem;
+    font-family: var(--mono);
+    font-size: 11px;
+  }
+
+  @media (max-width: 768px) {
+    nav { padding: 1rem 1.5rem; }
+    .nav-links { display: none; }
+    .hero { grid-template-columns: 1fr; }
+    .hero-left { padding: 3rem 1.5rem; }
+    .hero-left::after { display: none; }
+    .hero-right { padding: 2rem 1.5rem 4rem; }
+    section { padding: 4rem 1.5rem; }
+    .contact-grid { grid-template-columns: 1fr; }
+    footer { flex-direction: column; gap: 0.5rem; text-align: center; padding: 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Hugo Implementation Note -->
+<div class="hugo-note">
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+  Hugo implementation: This page maps to <code>content/_index.md</code> with theme config in <code>config/_default/</code> — deploy via Netlify connected to GitHub repo.
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">G.N. Onyenwezi</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="https://www.linkedin.com/in/gilbert-onyenwezi-71853531/" target="_blank">LinkedIn ↗</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="about" style="padding: 0;">
+  <div class="hero-left fade-in">
+    <div class="hero-tag">Supply Chain · Data Science · Operations</div>
+    <h1>Gilbert N.<br><span class="hero-title-em">Onyenwezi</span></h1>
+    <p class="hero-summary">
+      Supply chain and operations leader with 20+ years of experience across global manufacturing, distribution, and eCommerce. Currently pursuing a Master's in Data Science & AI at Northwestern University — bridging operational excellence with advanced analytics.
+    </p>
+    <div class="hero-cta">
+      <a href="#experience" class="btn btn-primary">View Experience</a>
+      <a href="https://www.linkedin.com/in/gilbert-onyenwezi-71853531/" target="_blank" class="btn btn-outline">LinkedIn Profile ↗</a>
+    </div>
+  </div>
+  <div class="hero-right fade-in" style="transition-delay: 0.15s;">
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num">20+</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">6</div>
+        <div class="stat-label">Degrees &amp; Certs</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">4</div>
+        <div class="stat-label">Countries Worked</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">∞</div>
+        <div class="stat-label">Kaizens Led</div>
+      </div>
+    </div>
+    <div class="hero-skills">
+      <span class="skill-pill featured">Lean Six Sigma</span>
+      <span class="skill-pill featured">Data Science</span>
+      <span class="skill-pill featured">Supply Chain Mgmt</span>
+      <span class="skill-pill">OpEx</span>
+      <span class="skill-pill">KPI Tracking</span>
+      <span class="skill-pill">Logistics</span>
+      <span class="skill-pill">Team Leadership</span>
+      <span class="skill-pill">Python / AI</span>
+      <span class="skill-pill">ISO Compliance</span>
+      <span class="skill-pill">Kaizen</span>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-header fade-in">
+    <div class="section-num">01 / Professional Experience</div>
+    <h2>Where I've <em>Made an Impact</em></h2>
+  </div>
+
+  <div class="timeline">
+
+    <div class="timeline-item fade-in">
+      <div class="timeline-header">
+        <div class="timeline-company">Wilsonart</div>
+        <div class="timeline-date">Jun 2024 – Sept 2025</div>
+      </div>
+      <div class="timeline-role">Operational Excellence Manager <span>· Temple, Texas</span></div>
+      <ul class="timeline-bullets">
+        <li>Developed and implemented transformative supply chain initiatives focused on innovation, automation, and interconnected smart factories.</li>
+        <li>Collaborated with senior leadership to identify and execute projects aligned with strategic company goals.</li>
+        <li>Tracked monthly manufacturing KPIs and developed countermeasures; established multi-year capacity roadmaps for manufacturing sites.</li>
+        <li>Facilitated associate development in Operational Excellence tools and kaizen leadership across multiple locations.</li>
+        <li>Promoted best practices and led cross-location leadership benchmarking sessions.</li>
+      </ul>
+    </div>
+
+    <div class="timeline-item fade-in">
+      <div class="timeline-header">
+        <div class="timeline-company">Wilsonart</div>
+        <div class="timeline-date">Apr 2023 – May 2024</div>
+      </div>
+      <div class="timeline-role">Area Manager – Distribution <span>· Temple, Texas</span></div>
+      <ul class="timeline-bullets">
+        <li>Oversaw all distribution and receiving areas, applying logistics management practices for seamless operations.</li>
+        <li>Initiated continuous improvement efforts using lean/Six Sigma tools.</li>
+        <li>Evaluated daily metrics and KPIs, initiating appropriate countermeasures.</li>
+        <li>Ensured organizational quality goals met compliance with ISO procedures.</li>
+      </ul>
+    </div>
+
+    <div class="timeline-item fade-in">
+      <div class="timeline-header">
+        <div class="timeline-company">Johnson Controls</div>
+        <div class="timeline-date">Mar 2022 – Mar 2023</div>
+      </div>
+      <div class="timeline-role">Global Warehouse Manager <span>· Lagos, Nigeria</span></div>
+      <ul class="timeline-bullets">
+        <li>Managed day-to-day eCommerce fulfillment operations, ensuring timely order processing and delivery.</li>
+        <li>Evaluated logistics partner performance, collaborating with supply chain teams on issue resolution.</li>
+        <li>Developed and owned business forecasts supported by data analysis.</li>
+        <li>Led workplace relocations including full project planning and execution.</li>
+      </ul>
+    </div>
+
+    <div class="timeline-item fade-in">
+      <div class="timeline-header">
+        <div class="timeline-company">Amazon</div>
+        <div class="timeline-date">Jan 2019 – Mar 2020</div>
+      </div>
+      <div class="timeline-role">Transportation Specialist <span>· New Jersey</span></div>
+      <ul class="timeline-bullets">
+        <li>Managed internal and external customer communications on transportation operations.</li>
+        <li>Led initiatives to streamline business processes and eliminate defects.</li>
+        <li>Partnered with senior leadership to reduce operational delays and improve performance metrics.</li>
+      </ul>
+    </div>
+
+    <div class="timeline-item fade-in">
+      <div class="timeline-header">
+        <div class="timeline-company">Amazon</div>
+        <div class="timeline-date">Jan 2018 – Dec 2018</div>
+      </div>
+      <div class="timeline-role">Area Manager <span>· New Jersey</span></div>
+      <ul class="timeline-bullets">
+        <li>Managed a team of 100–120 associates, delegating duties and monitoring performance metrics.</li>
+        <li>Ensured compliance with safety protocols and quality standards.</li>
+        <li>Delivered feedback and facilitated a continuous training environment.</li>
+      </ul>
+    </div>
+
+    <div class="timeline-item fade-in">
+      <div class="timeline-header">
+        <div class="timeline-company">Ferriesmart / Jand Homes</div>
+        <div class="timeline-date">Oct 2010 – Jun 2016</div>
+      </div>
+      <div class="timeline-role">Chief Operating Officer <span>· Lagos, Nigeria</span></div>
+      <ul class="timeline-bullets">
+        <li>Directed internal operations to meet budgetary and financial goals.</li>
+        <li>Participated in development of short-term and long-range strategic plans.</li>
+        <li>Established operating policies aligned with company strategic objectives.</li>
+      </ul>
+    </div>
+
+    <div class="timeline-item fade-in">
+      <div class="timeline-header">
+        <div class="timeline-company">United Geophysical Nigeria Ltd</div>
+        <div class="timeline-date">Oct 2003 – Oct 2008</div>
+      </div>
+      <div class="timeline-role">Operations Manager <span>· Lagos, Nigeria</span></div>
+      <ul class="timeline-bullets">
+        <li>Collaborated on key strategic priority projects.</li>
+        <li>Managed communication flow and executive material preparation for leadership meetings.</li>
+        <li>Facilitated employee engagement and culture initiatives.</li>
+      </ul>
+    </div>
+
+    <div class="timeline-item fade-in" style="padding-bottom: 0;">
+      <div class="timeline-header">
+        <div class="timeline-company">Manaksia Industries Nigeria Ltd</div>
+        <div class="timeline-date">Oct 2001 – Oct 2003</div>
+      </div>
+      <div class="timeline-role">Quality Control Manager <span>· Lagos, Nigeria</span></div>
+      <ul class="timeline-bullets">
+        <li>Managed production activities ensuring quality and efficiency standards.</li>
+        <li>Led cross-functional project teams to improve operational processes.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="section-header fade-in">
+    <div class="section-num">02 / Education</div>
+    <h2>Academic <em>Foundations</em></h2>
+  </div>
+  <div class="edu-grid fade-in">
+    <div class="edu-card" data-year="'26">
+      <div class="edu-degree">M.S. Data Science with AI Specialization</div>
+      <div class="edu-school">Northwestern University, Evanston IL</div>
+      <div class="edu-year">Expected 2026</div>
+    </div>
+    <div class="edu-card" data-year="'21">
+      <div class="edu-degree">A.S. Computer Science &amp; Information Systems</div>
+      <div class="edu-school">Middlesex College</div>
+      <div class="edu-year">2021</div>
+    </div>
+    <div class="edu-card" data-year="'18">
+      <div class="edu-degree">PG Certificate, Entrepreneurship &amp; Innovation</div>
+      <div class="edu-school">Massachusetts Institute of Technology (MIT)</div>
+      <div class="edu-year">2018</div>
+    </div>
+    <div class="edu-card" data-year="'09">
+      <div class="edu-degree">PG Diploma, Strategic Business IT</div>
+      <div class="edu-school">National Computing Centre, London</div>
+      <div class="edu-year">2009</div>
+    </div>
+    <div class="edu-card" data-year="'06">
+      <div class="edu-degree">PG Diploma, Mechanical Engineering</div>
+      <div class="edu-school">Federal University of Technology Akure</div>
+      <div class="edu-year">2006</div>
+    </div>
+    <div class="edu-card" data-year="'03">
+      <div class="edu-degree">B.Eng. Mechanical Engineering</div>
+      <div class="edu-school">Yaba College of Technology</div>
+      <div class="edu-year">2003</div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-header fade-in">
+    <div class="section-num">03 / Skills &amp; Competencies</div>
+    <h2>What I <em>Bring</em></h2>
+  </div>
+  <div class="skills-container fade-in">
+    <div>
+      <div class="skill-group-title">Supply Chain &amp; Logistics</div>
+      <ul class="skill-list">
+        <li>Supply Chain Management</li>
+        <li>Logistics Management</li>
+        <li>Inventory Optimization</li>
+        <li>eCommerce Fulfillment</li>
+        <li>Capacity Planning</li>
+      </ul>
+    </div>
+    <div>
+      <div class="skill-group-title">Process &amp; Quality</div>
+      <ul class="skill-list">
+        <li>Lean Six Sigma</li>
+        <li>Kaizen Leadership</li>
+        <li>Operational Efficiency</li>
+        <li>Cost Reduction</li>
+        <li>ISO Compliance / QA</li>
+      </ul>
+    </div>
+    <div>
+      <div class="skill-group-title">Data &amp; Technology</div>
+      <ul class="skill-list">
+        <li>Data Science (M.S. in progress)</li>
+        <li>Artificial Intelligence / ML</li>
+        <li>Data Analysis &amp; KPI Tracking</li>
+        <li>Python &amp; Statistical Methods</li>
+        <li>Computer Science / IT</li>
+      </ul>
+    </div>
+    <div>
+      <div class="skill-group-title">Leadership</div>
+      <ul class="skill-list">
+        <li>Team Leadership (100+ people)</li>
+        <li>Project Management</li>
+        <li>Cross-functional Collaboration</li>
+        <li>Training &amp; Development</li>
+        <li>Executive Communication</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="background: var(--paper);">
+  <div class="section-header fade-in">
+    <div class="section-num">04 / Contact</div>
+    <h2>Let's <em>Connect</em></h2>
+  </div>
+  <div class="contact-grid fade-in">
+    <div class="contact-info">
+      <div class="contact-item">
+        <div class="contact-icon">📍</div>
+        <div>
+          <div class="contact-label">Location</div>
+          <div class="contact-value">Round Rock, TX</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">📞</div>
+        <div>
+          <div class="contact-label">Phone</div>
+          <div class="contact-value"><a href="tel:9089067871">(908) 906-7871</a></div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">✉️</div>
+        <div>
+          <div class="contact-label">Email</div>
+          <div class="contact-value"><a href="mailto:Trebligism@gmail.com">Trebligism@gmail.com</a></div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">🔗</div>
+        <div>
+          <div class="contact-label">LinkedIn</div>
+          <div class="contact-value"><a href="https://www.linkedin.com/in/gilbert-onyenwezi-71853531/" target="_blank">gilbert-onyenwezi-71853531 ↗</a></div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">💻</div>
+        <div>
+          <div class="contact-label">GitHub</div>
+          <div class="contact-value"><a href="https://github.com/" target="_blank">github.com/[your-username] ↗</a></div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p class="contact-note">
+        "Operational excellence isn't a destination — it's a discipline of continuous improvement, data-driven decision-making, and empowering people to do their best work."
+      </p>
+      <div style="margin-top: 2rem;">
+        <a href="mailto:Trebligism@gmail.com" class="btn btn-primary">Send a Message</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>© 2025 Gilbert N. Onyenwezi · Round Rock, TX</div>
+  <div>Built with <span>Hugo</span> · Hosted on <span>Netlify</span> · Source on <span>GitHub</span></div>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
