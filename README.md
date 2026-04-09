@@ -1,29 +1,70 @@
-# Gilbert Onyenwezi Portfolio Starter (hugo-profile)
+# Gilbert Onyenwezi — Data Science & Operations Portfolio
 
-This starter is tailored to the `hugo-profile` theme.
+## Overview
 
-## Setup
+This repository contains my personal portfolio website built using Hugo, showcasing my work at the intersection of:
 
-1. Create a new Hugo site with YAML config.
-2. Add the theme:
-   - `git submodule add https://github.com/gurusabarish/hugo-profile.git themes/hugo-profile`
-3. Copy these files into the site root.
-4. Run `hugo server`.
+- Data Science  
+- Data Engineering  
+- Operations & Supply Chain  
+- Manufacturing & Quality Analytics  
 
-## Included
+## Live Website
 
-- `hugo.yaml` with homepage sections configured
-- `content/` pages for About, Experience, Education, Contact, and Projects
-- `static/files/resume.pdf`
-- placeholder SVG images in `static/images/`
-- `netlify.toml`
+👉 https://shimmering-parfait-171ef9.netlify.app/
 
-## Important
+---
 
-If the theme errors on pages without tags, update:
+## About Me
 
-```go
-{{ with .Params.tags }}{{ delimit . ", " }}{{ end }}
-```
+I am an operations leader with experience in manufacturing, logistics, and distribution, currently pursuing a Master’s in Data Science (AI specialization) at Northwestern University.
 
-inside `themes/hugo-profile/layouts/_default/single.html`.
+My focus is on building **decision-ready systems** that connect data, analytics, and execution.
+
+---
+
+## Portfolio Focus
+
+This site highlights projects in:
+
+- AI-driven quality inspection  
+- Supply chain analytics  
+- Data engineering pipelines  
+- KPI and performance systems  
+- Go-based backend and deployment tools  
+
+---
+
+## Technology Stack
+
+- Hugo (Go-based static site generator)  
+- Markdown + Go templating  
+- Git & GitHub  
+- Netlify deployment  
+
+---
+
+## Repository Structure
+
+gilbert-portfolio/
+├─ content/
+│  ├─ projects/
+│  │  └─ _index.md
+├─ static/
+│  ├─ files/
+│  │  └─ resume.pdf
+│  ├─ images/
+│  │  ├─ profile.png
+│  │  └─ projects/
+│  │     ├─ project1.png
+│  │     ├─ project2.png
+│  │     ├─ project3.png
+│  │     └─ project4.png
+├─ themes/
+│  └─ hugo-profile/
+├─ hugo.yaml
+
+
+## Repo
+
+👉 https://github.com/gilbertonyenwezi2026-oss/gilbert-portfolio/
