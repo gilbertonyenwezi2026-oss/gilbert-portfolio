@@ -1,19 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Web Development on Gilbert N. Onyenwezi | Operations leader, Data Science &amp; Artificial Intelligence Portfolio</title>
-    <link>http://localhost:1313/tags/web-development/</link>
-    <description>Recent content in Web Development on Gilbert N. Onyenwezi | Operations leader, Data Science &amp; Artificial Intelligence Portfolio</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 08 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/web-development/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Go &#43; Hugo Portfolio Website</title>
-      <link>http://localhost:1313/projects_backup/go-hugo-portfolio/</link>
-      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects_backup/go-hugo-portfolio/</guid>
-      <description>&lt;h2 id=&#34;objective&#34;&gt;Objective&lt;/h2&gt;&#xA;&lt;p&gt;Build a fast, scalable personal website using Hugo to showcase technical projects and professional experience.&lt;/p&gt;&#xA;&lt;h2 id=&#34;tools&#34;&gt;Tools&lt;/h2&gt;&#xA;&lt;p&gt;Go, Hugo, Git, GitHub, Netlify&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Web Development on Gilbert N. Onyenwezi | Operations leader, Data Science &amp; Artificial Intelligence Portfolio</title><link>https://shimmering-parfait-171ef9.netlify.app/tags/web-development/</link><description>Recent content in Web Development on Gilbert N. Onyenwezi | Operations leader, Data Science &amp; Artificial Intelligence Portfolio</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 08 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://shimmering-parfait-171ef9.netlify.app/tags/web-development/index.xml" rel="self" type="application/rss+xml"/><item><title>Go + Hugo Portfolio Website</title><link>https://shimmering-parfait-171ef9.netlify.app/projects_backup/go-hugo-portfolio/</link><pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate><guid>https://shimmering-parfait-171ef9.netlify.app/projects_backup/go-hugo-portfolio/</guid><description>&lt;h2 id="objective"&gt;Objective&lt;/h2&gt;
+&lt;p&gt;Build a fast, scalable personal website using Hugo to showcase technical projects and professional experience.&lt;/p&gt;
+&lt;h2 id="tools"&gt;Tools&lt;/h2&gt;
+&lt;p&gt;Go, Hugo, Git, GitHub, Netlify&lt;/p&gt;</description></item></channel></rss>
